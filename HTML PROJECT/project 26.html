@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MY | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="C:\Users\hp\OneDrive\Desktop\HTML PROJECT\script.js">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="scroll-text">
+            <marquee behavior="scroll" direction="left"> <strong> Welcome to my portfolio! I'm Abhishek a <span><U>front-end
+                        developer.</U></span></strong></marquee>
+        </div>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <span class="icon-bounce"></span>
+                        My<span>portfolio</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+               <h2>Hello It's Me</h2>
+                <h1><span>Abhishek KR</span></h1>
+                <div class="typewriter">
+                    <span class="typewriter-label">And I'm a </span><span id="typed"></span>
+                </div>
+                <p>Frontend Developer specializing in building responsive, user-friendly web applications.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn secondary-btn">Hire Me</a>
+                </div>
+            </div>
+            <div class="hero-img">
+                <!-- Add an image from a local folder -->
+                <img src="26.jpg" alt="." width="400" height="400">
+            </div>
+        </div>
+    </section>
+    <!-- Typed.js script -->
+     <script>
+        var typed = new Typed('#typed', {
+            strings: ['Frontend Developer', 'Web Designer', 'Backend Developer'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true
+        });
+    </script>
+     <!-- Disable Right Click -->
+    <script>
+        document.addEventListener("contextmenu", (event) => {
+            event.preventDefault();
+        });
+    </script>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-img">
+                    <img src="I am.jpeg" alt="About Image" width="400" height="700">
+                </div>
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>I'm a passionate front-end developer with 1 month of experience creating modern and responsive
+                        websites. I specialize in front-end development but also have experience with back-end
+                        technologies.</p>
+                    <p>My goal is to build applications that are not only visually appealing but also provide a seamless
+                        user experience. I'm constantly learning new technologies and techniques to stay at the
+                        forefront of web development.</p>
+                    <div class="skills">
+                        <h4>My Skills</h4>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Python</span>
+                            <span>Git</span>
+                            <span>Vercel / Netlify</span>
+                        </div>
+                    </div>
+                    <a href="Full Stack Development (1).pptx" class="btn">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My <span>Services</span></h2>
+            <div class="services-grid">
+                <style>
+                    .service-card {
+                        transition: all 0.3s ease;
+                        transform: translateY(0);
+                        z-index: 1;
+
+                    }
+
+                    .service-card i {
+                        transition: all 0.3s ease;
+                    }
+
+                    .service-card:hover i {
+                        transform: scale(1.2);
+                    }
+
+                    /* Optional: Add a subtle pulse animation */
+                    @keyframes pulse {
+                        0% {
+                            transform: scale(1);
+                        }
+
+                        50% {
+                            transform: scale(1.05);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+
+                    .service-card:hover {
+                        animation: pulse 1.5s 1;
+                    }
+                </style>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>front-end Development</h3>
+                    <p>Custom website development tailored to your business needs using modern technologies and best
+                        practices.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that look great and function perfectly on all devices from desktop to mobile.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Beautiful, intuitive interfaces designed with user experience principles in mind.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Application developer</h3>
+                    <p>Optimized websites that rank higher in search results and attract more visitors.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Certificates Section -->
+    <section id="certificates" class="Certificates">
+        <div class="container">
+            <h2 class="section-title">My <span>Certificates</span></h2>
+            <div class="certificates-grid">
+                <div class="cerificate-card">
+                    <img src="basics of python.jpeg" alt="Certificate 1" width="550" height="400"
+                        style="text-align: left;">
+                    <img src="oops using python.jpeg" alt="Certificate 2" width="550" height="400"
+                        style="text-align: right;">
+                </div>
+            </div>
+            <div class="certificate-card">
+                <img src="python of data science.jpeg" alt="Certificate 3" width="550" height="400">
+
+                <img src="introduction of aglie.jpeg" alt="Certificate 4" width="550" height="400">
+                <div style="text-align: right;">
+                </div>
+            </div>
+            <div class="certificate-card">
+                <img src="intro mongo db.jpeg" alt="Certificate 5" width="550" height="400">
+                <img src="mongo db, Ai.jpeg" alt="Certificate 6" width="550" height="400">
+                <div style="text-align: right;">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="projects-item" data-category="web">
+                    <img src="https://via.placeholder.com/600x400" alt="Project 1">
+                    <div class="projects-overlay">
+                        <h3>Normal Website</h3>
+                        <p>Web Development</p>
+                        <a href="#" class="projects-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="projects-item" data-category="app">
+                    <img src="" alt="Project 2">
+                    <div class="projects-overlay">
+                        <h3>Mobile App</h3>
+                        <p>App Development</p>
+                        <a href="#" class="projects-link"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                    <div class="projects-item" data-category="web">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 3">
+                        <div class="projects-overlay">
+                            <h3>Blog Platform</h3>
+                            <p>Web Development</p>
+                            <a href="#" class="projects-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-item" data-category="app">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 4">
+                        <div class="projects-overlay">
+                            <h3>Fitness App</h3>
+                            <p>App Development</p>
+                            <a href="#" class="projects-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="projects-item" data-category="design">
+                        <img src="https://via.placeholder.com/600x400" alt="Project 5">
+                        <div class="projects-overlay">
+                            <h3>Brand Identity</h3>
+                            <p>Graphic Design</p>
+                            <a href="#" class="projects-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <p>Feel free to reach out for collaborations or just a friendly hello</p>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>abhishek636kr@email.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91(6383221055)</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Tirupattur , TN</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/abhi0626-kr"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/mr-abishek-503a4b333/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/MAbishek43944"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/mr._abishek.__/"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <form action="send_email.php" method="POST">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ABHISHEK. All Rights Reserved.</p>
+            <a href="#home" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
